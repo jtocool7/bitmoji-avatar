@@ -1,0 +1,69 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.choose-screen {
+  position:absolute;
+  width:100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column wrap;
+}
+
+#choose{
+  height:50%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#man{
+  height:40%;
+  margin-right:5%;
+  margin-left:5%;
+  transition:1s;
+}
+
+#man:hover{
+  cursor: pointer;
+  height:50%;
+}
+
+#woman{
+  height:40%;
+  margin-right:5%;
+  margin-left:5%;
+  transition:1s;
+}
+
+#woman:hover{
+  cursor: pointer;
+  height:50%;
+}
+
+.choose-traits {
+  position:absolute;
+  width:100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column wrap;
+}
+
+.avatar{
+  height:20%;
+  margin-bottom: 5%;
+}
+
+#select1{
+  margin-bottom: 5%;
+}

@@ -1,0 +1,14 @@
+import libmoji from "libmoji";
+//console.log(libmoji.getTraits("male", "bitmoji"))
+//[5].options[2].value
+libmoji.getTraits("male", "bitmoji")[17].options.sort(function (a, b) {
+    return a.value - b.value;
+  });
+const trait = [libmoji.getTraits("male", "bitmoji")[5].key, libmoji.getTraits("male", "bitmoji")[5].options[1].value]
+const trait2 = [libmoji.getTraits("male", "bitmoji")[17].key, libmoji.getTraits("male", "bitmoji")[17].options[5].value]
+let gender = libmoji.genders[libmoji.randInt(2)];
+let style = ["bitmoji", 4];
+let traits = [trait, trait2];
+let outfit = libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(gender[0]))));
+
+console.log(libmoji.buildPreviewUrl("head",3,1,style[1],0,traits,outfit));
